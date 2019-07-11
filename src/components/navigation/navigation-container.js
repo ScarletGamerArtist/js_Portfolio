@@ -36,7 +36,6 @@ export default class NavigationComponent extends Component {
                 </NavLink>
                 </div>
 
-
                 
 
                 {false ? <button>Add Blog</button> : null}

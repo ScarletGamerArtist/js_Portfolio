@@ -8,7 +8,7 @@ export default class PortfolioContainer extends Component {
         super();
 
         this.state = {
-            pageTitle: "Welcome to my portfolio.",
+            pageTitle: "Majestic Creatures.",
             isLoading: false,
             data: []
         };
@@ -65,14 +65,19 @@ export default class PortfolioContainer extends Component {
                 <h2>{this.state.pageTitle}</h2>
 
 
-                <button onClick={() => this.handleFilter('Grizzly Bear')}>Grizzly Bear</button>
-                <button onClick={() => this.handleFilter('Tasmanian Devil')}>Tasmanian Devil</button>
-                <button onClick={() => this.handleFilter('Vampire Bat')}>Vampire Bat</button>
-                <button onClick={() => this.handleFilter('Ball Python')}>Ball Python</button>
-                <button onClick={() => this.handleFilter('Red Fox')}>Red Fox</button>
+                <button onClick={() => this.handleFilter('Grizzly')}>Grizzly</button>
+                <button onClick={() => this.handleFilter('Kermode')}>Kermode</button>
+                <button onClick={() => this.handleFilter('Black')}>Black</button>
+                <button onClick={() => this.handleFilter('Sun')}>Sun</button>
+                <button onClick={() => this.handleFilter('Sloth')}>Sloth</button>
+                <button onClick={() => this.handleFilter('Polar')}>Polar</button>
+                <button onClick={() => this.handleFilter('Spectacled')}>Spectacled</button>
+                <button onClick={() => this.handleFilter('Panda')}>Panda</button>
 
+
+            <div className="portfolio-items-wrapper">
                 {this.portfolioItems()}
-
+                </div>
                 
             </div>
         );
