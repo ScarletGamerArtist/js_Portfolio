@@ -61,25 +61,25 @@ export default class PortfolioContainer extends Component {
 
 
         return (
-            <div>
-                <h2>{this.state.pageTitle}</h2>
-
-
-                <button onClick={() => this.handleFilter('Grizzly')}>Grizzly</button>
-                <button onClick={() => this.handleFilter('Kermode')}>Kermode</button>
-                <button onClick={() => this.handleFilter('Black')}>Black</button>
-                <button onClick={() => this.handleFilter('Sun')}>Sun</button>
-                <button onClick={() => this.handleFilter('Sloth')}>Sloth</button>
-                <button onClick={() => this.handleFilter('Polar')}>Polar</button>
-                <button onClick={() => this.handleFilter('Spectacled')}>Spectacled</button>
-                <button onClick={() => this.handleFilter('Panda')}>Panda</button>
-
-
+                          
+                
             <div className="portfolio-items-wrapper">
+
+                <button className="btn" onClick={() => this.handleFilter('Grizzly')}>Grizzly</button>
+                <button className="btn" onClick={() => this.handleFilter('Kermode')}>Kermode</button>
+                <button className="btn" onClick={() => this.handleFilter('Black')}>Black</button>
+                <button className="btn" onClick={() => this.handleFilter('Sun')}>Sun</button>
+                <button className="btn" onClick={() => this.handleFilter('Sloth')}>Sloth</button>
+                <button className="btn" onClick={() => this.handleFilter('Polar')}>Polar</button>
+                <button className="btn" onClick={() => this.handleFilter('Spectacled')}>Spectacled</button>
+                <button className="btn" onClick={() => this.handleFilter('Panda')}>Panda</button>
+                <button className="btn" onClick={() => this.handleFilter('Sea')}>Sea Bear</button>
+
+
                 {this.portfolioItems()}
                 </div>
                 
-            </div>
+            
         );
     }
 }
